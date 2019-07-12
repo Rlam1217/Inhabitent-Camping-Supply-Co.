@@ -26,6 +26,12 @@ function red_starter_setup() {
 		'primary' => esc_html( 'Primary Menu' ),
 	) );
 
+	
+
+	
+	
+
+
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
 		'search-form',
@@ -36,8 +42,23 @@ function red_starter_setup() {
 	) );
 
 }
+
+// add theme support for custom logo
+add_theme_support( 'custom-logo', array(
+	'height'      => 50,
+	'width'       => 33,
+	'flex-height' => true,
+	'flex-width'  => true,
+) );
+
+
+
+
+
+
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -48,6 +69,7 @@ function red_starter_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+
 
 /**
  * Register widget area.
@@ -84,6 +106,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' );
 
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
@@ -94,6 +117,13 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+// Remove "Editor" links from sub-menus
+function inhabitent_remove_submenus() {
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+}
+add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
 /**
  * Custom template tags for this theme.
  */
@@ -103,3 +133,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+

@@ -2,4 +2,263 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
+.site {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.site-header {
+    
+    background-color: transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+  
+  
+  .site-branding{
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        height: 33px;
+  .custom-logo {
+      width: 50px;
+      height: 33px;
+  }
+}
+   
+    
+  .main-navigation {
+    font-family: $font__code;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    a {
+        color: white;
+    
+        &:visited {
+            color: white;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: #d99054;
+        }
+        
+        
+    }
+    
+    .menu-item {
+      padding: 0 12px;
+    }
+  }
+  }
+
+
+}
+
+
+.site-content {
+    background-color: purple;
+    @include container;
+    display: flex;
+    .content-area{
+        width: 817.61px;
+        padding-top: 90px;
+        padding-right: 56px;
+        background-color:blue;
+        
+    }
+ 
+    .widget-area{
+        width: 302.39px;
+        padding-top: 90px;
+        padding-left: 56px;
+        background-color: yellow;
+    }
+}
+
+
+
+.site-footer {
+    background-image: url('../../images/dark-wood.png');
+    
+    margin: 0 auto;
+   
+
+    .site-info{
+        
+        background-color: purple;
+    }
+
+ 
+.footer-content-container {
+    @include container;
+    display: flex;
+    justify-content: center;
+    .contact{
+        
+        flex-basis: 25%;
+        margin: 3rem 0;
+    }
+    .business-hours{
+        
+        flex-basis: 25%;
+        margin: 3rem 0;
+    }
+    .text-logo{
+       
+        flex-basis: 50%;
+        margin: 3rem 0;
+     }  
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Front page */
+
+.page-id-30 {
+
+.site-content {
+    width: 100%;
+    
+
+
+.main-image{
+    width: 1899px;
+    height: 943px;
+    position: relative;
+}
+
+.wp-image-98 {
+    position: absolute;
+    right: 50vw; 
+  top: 50vh;
+}
+
+.main-content{
+    @include container;
+    
+    }
+ 
+ }
+
+}
+
+    
+
+    
+
+
+
+
+
+
+/* About page */
+
+.page-id-85 {
+    .site-content{
+        
+        width: 100%;
+        .content-area{
+            width: 100%;
+            padding: 0 0 0 0;
+            
+        }
+    }
+
+.about-image{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.entry-title{
+    background-color: red;
+    margin: 0;
+    width: 100px;
+    position: absolute;
+    right: 50vw; 
+    top: 50vh; 
+}
+
+
+}
+
+/* Journal page */
+
+
+.journal-posts {
+    .entry-header {
+
+    position: relative;
+
+img { 
+    width: 760.600px;
+    height: 520.234px;
+    
+    
+}
+
+.entry-title-post{
+    background-color: #248a83;
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+    width: 500px;
+    padding: .75rem 1.5rem;
+    text-align: left;
+    top: 50px;
+}  
+
+.entry-meta {
+    background-color: #248a83;
+    color: white;
+    position: absolute;
+    
+}
+    }
+}
+
+
+
+
+
+/* Custom template */
+
+
+
+
+
+
+
+
+        
+    
+    
+
+   
+
+
+    
+
+

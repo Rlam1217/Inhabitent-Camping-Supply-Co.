@@ -43,6 +43,69 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* extra resetting  */
+/* makes all images responsive */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/* ------------------------------------------------ */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -434,8 +497,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -543,9 +605,7 @@ a {
 
 .aligncenter {
   clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  display: block; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -628,9 +688,7 @@ object {
   margin-bottom: 1.5rem;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+    display: block; }
   .wp-caption .wp-caption-text {
     margin: 0.8075rem 0; }
 
@@ -669,4 +727,153 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site {
+  max-width: 100%;
+  margin: 0 auto; }
+
+.site-header {
+  background-color: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header .site-branding {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .site-header .site-branding .logo {
+      height: 33px; }
+      .site-header .site-branding .logo .custom-logo {
+        width: 50px;
+        height: 33px; }
+    .site-header .site-branding .main-navigation {
+      font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+      font-size: .8rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-transform: uppercase; }
+      .site-header .site-branding .main-navigation a {
+        color: white; }
+        .site-header .site-branding .main-navigation a:visited {
+          color: white; }
+        .site-header .site-branding .main-navigation a:hover, .site-header .site-branding .main-navigation a:focus, .site-header .site-branding .main-navigation a:active {
+          color: #d99054; }
+      .site-header .site-branding .main-navigation .menu-item {
+        padding: 0 12px; }
+
+.site-content {
+  background-color: purple;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-content .content-area {
+    width: 817.61px;
+    padding-top: 90px;
+    padding-right: 56px;
+    background-color: blue; }
+  .site-content .widget-area {
+    width: 302.39px;
+    padding-top: 90px;
+    padding-left: 56px;
+    background-color: yellow; }
+
+.site-footer {
+  background-image: url("../../images/dark-wood.png");
+  margin: 0 auto; }
+  .site-footer .site-info {
+    background-color: purple; }
+  .site-footer .footer-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .site-footer .footer-content-container .contact {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      margin: 3rem 0; }
+    .site-footer .footer-content-container .business-hours {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      margin: 3rem 0; }
+    .site-footer .footer-content-container .text-logo {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      margin: 3rem 0; }
+
 /* Front page */
+.page-id-30 .site-content {
+  width: 100%; }
+  .page-id-30 .site-content .main-image {
+    width: 1899px;
+    height: 943px;
+    position: relative; }
+  .page-id-30 .site-content .wp-image-98 {
+    position: absolute;
+    right: 50vw;
+    top: 50vh; }
+  .page-id-30 .site-content .main-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+
+/* About page */
+.page-id-85 .site-content {
+  width: 100%; }
+  .page-id-85 .site-content .content-area {
+    width: 100%;
+    padding: 0 0 0 0; }
+
+.page-id-85 .about-image {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+.page-id-85 .entry-title {
+  background-color: red;
+  margin: 0;
+  width: 100px;
+  position: absolute;
+  right: 50vw;
+  top: 50vh; }
+
+/* Journal page */
+.journal-posts .entry-header {
+  position: relative; }
+  .journal-posts .entry-header img {
+    width: 760.600px;
+    height: 520.234px; }
+  .journal-posts .entry-header .entry-title-post {
+    background-color: #248a83;
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+    width: 500px;
+    padding: .75rem 1.5rem;
+    text-align: left;
+    top: 50px; }
+  .journal-posts .entry-header .entry-meta {
+    background-color: #248a83;
+    color: white;
+    position: absolute; }
+
+/* Custom template */

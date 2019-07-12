@@ -7,6 +7,11 @@
 // Center block
 @mixin center-block {
 	display: block;
+	
+}
+
+@mixin container {
 	margin-left: auto;
 	margin-right: auto;
+	width: $container_width;
 }
