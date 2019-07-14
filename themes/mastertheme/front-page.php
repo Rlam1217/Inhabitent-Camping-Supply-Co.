@@ -17,6 +17,8 @@ get_header(); ?>
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 	the_post_thumbnail( 'featured-podcast', array( 'class' => 'main-image' ) ); 
 }
+
+
 ?></div>
 
         
@@ -25,33 +27,59 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 			
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				 <?php //get_template_part( 'template-parts/content', 'page' ); ?> 
+				 <?php the_content() ?>
 
 			<?php endwhile; // End of the loop. ?>
 
 </div>
 
-
+<div class="journal-container">
 <?php
-   $args = array( 'post_type' => 'post', 'order' => 'ASC' , 'showposts' => 4);  // loops posts
+   $args = array( 'post_type' => 'post', 'order' => 'ASC' , 'showposts' => 3);  // loops posts
    $posts = new WP_Query( $args ); // instantiate our object
 ?>
 
+
 <?php if ( $posts->have_posts() ) : ?>
+
    <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+   
+   <div class="journal-thumbnail-wrapper">
+	  
       <?php /* Content of the queried post results goes here */ ?>
 	  <?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?> 
 		<?php endif; ?>
+		
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+		<div class="frontpage-entry-meta">
+		<?php the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?>
+		
+			
 
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+
+			
+			<a class="read-button">Read Entry</a>
+			
+		
+			
+		</div><!-- .entry-meta -->
+
+
+		</div>
+		
+		
    <?php endwhile; ?>
+  
    <?php wp_reset_postdata(); ?>
 <?php else : ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
+
+
+</div>
 
 
 		</main><!-- #main -->
