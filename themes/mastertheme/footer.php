@@ -28,15 +28,16 @@
 					
 					
 						<div class="text-logo">
-							<p>Inhabitent Camping Supply Co.</p>
+						<?php echo '<img src="' . wp_get_attachment_url( 56 ) . '" alt="" />'; ?> 
+						
 						</div>	
 					
-					
+						<div class="site-info">
+							Copyright 2019 Inhabitent
+						</div>
 						
 					</div>
-					<div class="site-info">
-							Copyright 2019 Inhabitent
-						</div><!-- .site-info -->
+					<!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div><!-- #page -->
 
