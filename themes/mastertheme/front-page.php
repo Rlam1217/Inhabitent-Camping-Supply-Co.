@@ -56,14 +56,23 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 
 		<div class="frontpage-entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-			<?php the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?>
+			<?php // the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?>
+
+			
+
+
+			<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?> <?php the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?></a>
 		
 			
-
+	
 			
-
 			
-			<a class="read-button">Read Entry</a>
+			<?php // echo get_post_permalink( $id ); ?>
+			
+			<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>
+			<div class="read-button">Read Entry
+			</div>
+			</a>
 			
 		
 			

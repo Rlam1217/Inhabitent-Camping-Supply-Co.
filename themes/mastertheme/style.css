@@ -964,7 +964,7 @@ object {
   background-image: url("../../images/dark-wood.png");
   margin: 0 auto; }
   .site-footer .site-info {
-    background-color: purple; }
+    margin: 0 auto; }
   .site-footer .footer-content-container {
     margin-left: auto;
     margin-right: auto;
@@ -972,9 +972,11 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .site-footer .footer-content-container .contact {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
@@ -986,7 +988,11 @@ object {
     .site-footer .footer-content-container .text-logo {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      padding-left: 280px; }
+      .site-footer .footer-content-container .text-logo img {
+        width: 280px;
+        height: 50px; }
 
 /* Front page */
 .page-id-30 .site-content {
@@ -1003,6 +1009,11 @@ object {
     margin-left: auto;
     margin-right: auto;
     width: 1120px; }
+    .page-id-30 .site-content .main-content h2 {
+      text-align: center;
+      font-family: '.';
+      font-weight: 400px;
+      font-size: 2.4rem; }
   .page-id-30 .site-content .journal-container {
     margin-left: auto;
     margin-right: auto;
@@ -1014,7 +1025,8 @@ object {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper {
-      width: 366px; }
+      width: 366px;
+      border: 1px solid; }
       .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper img {
         width: 365.7px;
         height: 250px; }
@@ -1022,7 +1034,8 @@ object {
         padding: 12px; }
         .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button {
           background-color: red;
-          padding: 12px 24px; }
+          padding: 12px 24px;
+          width: 113px; }
 
 /* About page */
 .page-id-85 .site-content {
