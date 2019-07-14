@@ -35,6 +35,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 </div>
 
 <div class="journal-container">
+
 <?php
    $args = array( 'post_type' => 'post', 'order' => 'ASC' , 'showposts' => 3);  // loops posts
    $posts = new WP_Query( $args ); // instantiate our object
@@ -54,11 +55,12 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		
 
 		<div class="frontpage-entry-meta">
-		<?php the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?>
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+			<?php the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?>
 		
 			
 
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+			
 
 			
 			<a class="read-button">Read Entry</a>
