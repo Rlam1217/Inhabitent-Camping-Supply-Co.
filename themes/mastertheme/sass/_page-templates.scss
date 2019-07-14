@@ -152,12 +152,32 @@
 .wp-image-98 {
     position: absolute;
     right: 50vw; 
-  top: 50vh;
+    top: 50vh;
 }
 
 .main-content{
     @include container;
-    
+    }
+
+    .journal-container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+
+        .journal-thumbnail-wrapper{
+            width: 366px;
+         img{   width: 365.7px;
+            height: 250px;}
+
+            .frontpage-entry-meta {
+                padding: 12px;
+                .read-button {
+                    background-color: red;
+                    padding: 12px 24px;
+                }
+
+            }
+        }
     }
  
  }
@@ -201,6 +221,17 @@
     top: 50vh; 
 }
 
+.entry-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        h2{
+            text-align: center;
+            font-family: 'Merriweather Web';
+        }
+    
+}
+
 
 }
 
@@ -218,6 +249,7 @@ img {
     
     
 }
+    }
 
 .entry-title-post{
     background-color: #248a83;
@@ -234,10 +266,65 @@ img {
     background-color: #248a83;
     color: white;
     position: absolute;
-    
+    bottom: 7px;
+    right: 1px;
 }
     }
-}
+
+
+    /* single posts */
+
+    .entry-header {
+
+        position: relative;
+    
+    img { 
+        width: 760.600px;
+        height: 520.234px;
+        
+        
+    }
+        }
+    
+    .entry-title{
+        background-color: #248a83;
+        color: white;
+        position: absolute;
+        font-size: 2rem;
+        width: 500px;
+        padding: .75rem 1.5rem;
+        text-align: left;
+        top: 50px;
+    }  
+    
+    .entry-meta {
+        background-color: #248a83;
+        color: white;
+        position: absolute;
+        bottom: 7px;
+        right: 1px;
+        
+    }
+
+
+    /* find us */
+
+    .page-id-66 {
+
+        .entry-title{
+            background-color: red;
+            color: white;
+            
+            font-size: 2rem;
+            width: 500px;
+            padding: .75rem 1.5rem;
+            text-align: left;
+            top: 50px;
+        }  
+    }
+        
+    
+
 
 
 
