@@ -266,15 +266,24 @@ body{
 /* About page */
 
 .page-id-85 {
-    .entry-title{
-        
+    h1 {
+        color: white;
         font-size: 3rem;
-        font-weight: bold;
+        font-weight: 900;
         margin: 0;
-        
         position: absolute;
-        right: 50vw; 
-        top: -50vh; 
+        z-index: 1;
+        right: 44vw; 
+        top: 50vh; 
+        
+        
+    }
+
+    h2 {
+        text-transform: uppercase;
+            font-size: 2.1rem;
+            font-weight: 900;
+
     }
     .site-content{
         
@@ -312,15 +321,25 @@ body{
 
 
 .journal-posts {
+    .readmore-button{
+        background-color: white;
+                        color: black;
+                        padding: 12px 24px;
+                        width: 113px;
+                        a:hover, a:active {
+                            background-color: #d99054;
+                          }
+                        
+    }
+
+
     .entry-header {
 
     position: relative;
 
 img { 
     width: 760.600px;
-    height: 520.234px;
-    
-    
+    height: 520.234px;  
 }
     }
 
@@ -343,6 +362,9 @@ img {
     bottom: 7px;
     right: 1px;
 }
+
+
+
     } 
 
 
@@ -384,7 +406,7 @@ img {
     /* find us */
 
     .page-id-66 {
-        h2 {
+        h1, h2 {
             margin-bottom: 24px;
             text-transform: uppercase;
             font-size: 2.1rem;

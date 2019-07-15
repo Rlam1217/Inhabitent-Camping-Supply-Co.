@@ -1073,13 +1073,20 @@ body {
             color: white; }
 
 /* About page */
-.page-id-85 .entry-title {
+.page-id-85 h1 {
+  color: white;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 900;
   margin: 0;
   position: absolute;
-  right: 50vw;
-  top: -50vh; }
+  z-index: 1;
+  right: 44vw;
+  top: 50vh; }
+
+.page-id-85 h2 {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: 900; }
 
 .page-id-85 .site-content {
   width: 100%; }
@@ -1101,6 +1108,14 @@ body {
     font-family: 'Merriweather Web'; }
 
 /* Journal page */
+.journal-posts .readmore-button {
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  width: 113px; }
+  .journal-posts .readmore-button a:hover, .journal-posts .readmore-button a:active {
+    background-color: #d99054; }
+
 .journal-posts .entry-header {
   position: relative; }
   .journal-posts .entry-header img {
@@ -1150,7 +1165,7 @@ body {
   right: 1px; }
 
 /* find us */
-.page-id-66 h2 {
+.page-id-66 h1, .page-id-66 h2 {
   margin-bottom: 24px;
   text-transform: uppercase;
   font-size: 2.1rem;
