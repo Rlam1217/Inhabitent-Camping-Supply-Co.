@@ -14,8 +14,13 @@
 					
 						<div class="contact">
 							<h3>Contact Info</h3>
+							<p>info@inhabitent.com</p>
 							<p>778-456-7891</p>
-							<p>F T G</p>
+							<p>
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-twitter-square"></i>
+								<i class="fab fa-google-plus-square"></i>
+							</p>
 						</div>
 					
 					
@@ -33,7 +38,7 @@
 						</div>	
 					
 						<div class="site-info">
-							Copyright 2019 Inhabitent
+							<p>Copyright &copy; 2019 Inhabitent</p>
 						</div>
 						
 					</div>
