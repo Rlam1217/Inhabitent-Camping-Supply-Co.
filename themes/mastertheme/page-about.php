@@ -10,8 +10,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+		<?php 
+ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 	the_post_thumbnail( 'featured-podcast', array( 'class' => 'about-image' ) ); 
 	
  }

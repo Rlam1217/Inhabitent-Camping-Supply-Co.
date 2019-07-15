@@ -895,6 +895,21 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* globals */
+body {
+  font-family: 'Merriweather';
+  font-size: 16px; }
+  body h1, body h2 {
+    font-family: '.'; }
+  body a:link {
+    text-decoration: none; }
+  body a:link {
+    color: white; }
+  body a:visited {
+    color: white; }
+  body a:hover, body a:active {
+    color: #d99054; }
+
 .site {
   max-width: 100%;
   margin: 0 auto; }
@@ -932,14 +947,8 @@ object {
           -ms-flex-align: center;
               align-items: center;
       text-transform: uppercase; }
-      .site-header .site-branding .main-navigation a {
-        color: white; }
-        .site-header .site-branding .main-navigation a:visited {
-          color: white; }
-        .site-header .site-branding .main-navigation a:hover, .site-header .site-branding .main-navigation a:focus, .site-header .site-branding .main-navigation a:active {
-          color: #d99054; }
-      .site-header .site-branding .main-navigation .menu-item {
-        padding: 0 12px; }
+    .site-header .site-branding .menu-item {
+      padding: 0 12px; }
 
 .site-content {
   background-color: purple;
@@ -959,12 +968,17 @@ object {
     padding-top: 90px;
     padding-left: 56px;
     background-color: yellow; }
+    .site-content .widget-area h2 {
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 900; }
+    .site-content .widget-area .bold {
+      font-weight: bold; }
 
 .site-footer {
   background-image: url("../../images/dark-wood.png");
   margin: 0 auto; }
-  .site-footer .site-info {
-    margin: 0 auto; }
   .site-footer .footer-content-container {
     margin-left: auto;
     margin-right: auto;
@@ -977,6 +991,15 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .site-footer .footer-content-container h3 {
+      margin-bottom: 24px;
+      font-family: '.';
+      color: #d99054;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 900; }
+    .site-footer .footer-content-container p {
+      color: white; }
     .site-footer .footer-content-container .contact {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
@@ -993,6 +1016,8 @@ object {
       .site-footer .footer-content-container .text-logo img {
         width: 280px;
         height: 50px; }
+    .site-footer .footer-content-container .site-info {
+      margin: 0 auto; }
 
 /* Front page */
 .page-id-30 .site-content {
@@ -1003,7 +1028,7 @@ object {
     position: relative; }
   .page-id-30 .site-content .wp-image-98 {
     position: absolute;
-    right: 50vw;
+    right: 40vw;
     top: 50vh; }
   .page-id-30 .site-content .main-content {
     margin-left: auto;
@@ -1031,13 +1056,31 @@ object {
         width: 365.7px;
         height: 250px; }
       .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta {
-        padding: 12px; }
+        padding: 12px;
+        color: black; }
+        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:link {
+          color: #248A83; }
+        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:visited {
+          color: #248A83; }
+        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:hover, .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:active {
+          color: black; }
         .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button {
-          background-color: red;
+          background-color: white;
+          color: black;
           padding: 12px 24px;
           width: 113px; }
+          .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button a:link {
+            color: white; }
 
 /* About page */
+.page-id-85 .entry-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  right: 50vw;
+  top: -50vh; }
+
 .page-id-85 .site-content {
   width: 100%; }
   .page-id-85 .site-content .content-area {
@@ -1048,14 +1091,6 @@ object {
   width: 100vw;
   height: 100vh;
   position: relative; }
-
-.page-id-85 .entry-title {
-  background-color: red;
-  margin: 0;
-  width: 100px;
-  position: absolute;
-  right: 50vw;
-  top: 50vh; }
 
 .page-id-85 .entry-content {
   margin-left: auto;
@@ -1115,8 +1150,16 @@ object {
   right: 1px; }
 
 /* find us */
+.page-id-66 h2 {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: 900; }
+
+.page-id-66 .required {
+  color: #d99054; }
+
 .page-id-66 .entry-title {
-  background-color: red;
   color: white;
   font-size: 2rem;
   width: 500px;
