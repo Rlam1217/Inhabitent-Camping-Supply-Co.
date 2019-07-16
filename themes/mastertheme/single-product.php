@@ -11,14 +11,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="product-wrapper" role="main">
-        <?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+       
         
         
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="product-image-wrapper"> 
-       
+        <?php echo '<img src="' . CFS()->get( 'product_image' ) . '" alt="" />'; ?>
 
         <?php //echo '<img src="' . wp_get_attachment_url( 136 ) . '" alt="" />'; ?>
         </div>

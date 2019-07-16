@@ -34,6 +34,48 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 
 </div>
 
+
+<h2>Shop Stuff</h2>
+<div class="product-info-container">
+	<div class="product-type-wrapper">
+		<div class="product-icon">
+			<?php echo '<img src="' . wp_get_attachment_url( 189 ) . '" alt="" />'; ?> 
+		</div>
+		<div class="product-description">
+			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+		</div>
+	</div>		
+
+	<div class="product-type-wrapper">
+		<div class="product-icon">
+		<?php echo '<img src="' . wp_get_attachment_url( 190 ) . '" alt="" />'; ?> 
+		</div>
+		<div class="product-description">
+			<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+		</div>
+	</div>	
+
+	<div class="product-type-wrapper">
+		<div class="product-icon">
+		<?php echo '<img src="' . wp_get_attachment_url( 191 ) . '" alt="" />'; ?> 
+		</div>
+		<div class="product-description">
+			<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+		</div>
+	</div>	
+	
+	<div class="product-type-wrapper">
+		<div class="product-icon">
+		<?php echo '<img src="' . wp_get_attachment_url( 192 ) . '" alt="" />'; ?> 
+		</div>
+		<div class="product-description">
+			<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+		</div>		
+	</div>	
+</div>
+
+
+<h2>Inhabitent Journal</h2>
 <div class="journal-container">
 
 <?php
@@ -45,6 +87,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 <?php if ( $posts->have_posts() ) : ?>
 
    <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+
    
    <div class="journal-thumbnail-wrapper">
 	  

@@ -205,7 +205,12 @@ body{
 /* Front page */
 
 .page-id-30 {
-
+    h2 {
+        text-align: center;
+        font-family: '.';
+        font-weight: 400px;
+        font-size: 2.4rem;
+    }
 .site-content {
     width: 100%;
 .main-image{
@@ -226,12 +231,31 @@ body{
 
 .main-content{
     @include container;
-    h2 {
-        text-align: center;
-        font-family: '.';
-        font-weight: 400px;
-        font-size: 2.4rem;
+    
     }
+
+    .product-info-container {
+        @include container;
+        background-color: peru;
+        display: flex;
+        justify-content: space-between;
+        
+        .product-type-wrapper {
+            width: 263.2px;
+            border: 5px 1px 1px 1px;
+            border: solid;
+            padding: 12px;
+
+            .product-icon {
+                margin: 0 auto;
+                width: 70px;
+                height: 70px;
+            }
+            .product-description {
+                text-align: center;
+            }
+
+        }
     }
 
     .journal-container {
