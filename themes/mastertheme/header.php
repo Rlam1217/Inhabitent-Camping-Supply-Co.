@@ -24,7 +24,23 @@
 					
 					<div class="site-branding">
 						<div class="logo">
-					<?php the_custom_logo(); ?>
+						        
+  
+						<?php if (! is_front_page() && ! is_page('about')) {
+ 
+ echo '<img src="' . wp_get_attachment_url( 58 ) . '" alt="" />';
+ 
+} else { the_custom_logo();
+	
+}
+
+?>
+
+
+ 
+
+					
+					
 						</div>
 
 

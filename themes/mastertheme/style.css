@@ -934,12 +934,16 @@ body {
             justify-content: space-between; }
     .site-header .site-branding .logo {
       height: 33px; }
+      .site-header .site-branding .logo img {
+        width: 50px;
+        height: 33px; }
       .site-header .site-branding .logo .custom-logo {
         width: 50px;
         height: 33px; }
     .site-header .site-branding .main-navigation {
+      color: white;
       font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-      font-size: .8rem;
+      font-size: 1.1rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -949,6 +953,15 @@ body {
       text-transform: uppercase; }
     .site-header .site-branding .menu-item {
       padding: 0 12px; }
+
+.green-header .site-header .main-navigation {
+  color: #248A83; }
+  .green-header .site-header .main-navigation a:link {
+    color: #248A83; }
+  .green-header .site-header .main-navigation a:visited {
+    color: #248A83; }
+  .green-header .site-header .main-navigation a:hover, .green-header .site-header .main-navigation a:active {
+    color: #d99054; }
 
 .site-content {
   background-color: purple;
@@ -1182,4 +1195,29 @@ body {
   text-align: left;
   top: 50px; }
 
-/* Custom template */
+/* single products */
+.product-wrapper {
+  width: 1120px;
+  padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .product-wrapper h1 {
+    text-transform: uppercase;
+    color: #d99054;
+    font-size: 2.1rem;
+    font-weight: 900; }
+  .product-wrapper .product-image-wrapper {
+    width: 537.6px; }
+  .product-wrapper .product-description-wrapper {
+    width: 537.6px;
+    background-color: green; }
+    .product-wrapper .product-description-wrapper .social-buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .product-wrapper .product-description-wrapper .social-buttons .buttons {
+        background-color: white; }

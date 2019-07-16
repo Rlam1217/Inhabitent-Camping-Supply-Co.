@@ -14,6 +14,7 @@ body{
     a:link {
         text-decoration: none;
       }
+
       a:link {
         color: white;
       }
@@ -21,6 +22,7 @@ body{
       a:visited {
         color: white;
       }
+      
 
       a:hover, a:active {
         color: #d99054;
@@ -38,6 +40,7 @@ body{
     margin: 0 auto;
 }
 
+// header
 
 
 .site-header {
@@ -57,6 +60,10 @@ body{
     justify-content: space-between;
     .logo{
         height: 33px;
+        img {
+            width: 50px;
+            height: 33px;
+        }
   .custom-logo {
       width: 50px;
       height: 33px;
@@ -65,15 +72,12 @@ body{
    
     
   .main-navigation {
+      color: white;
     font-family: $font__code;
-    font-size: .8rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-
-   
-        
-        
+    text-transform: uppercase;      
     }
     
     .menu-item {
@@ -82,8 +86,28 @@ body{
   }
   }
 
+.green-header{
+    .site-header{
+
+    
+     .main-navigation{
+    color: #248A83;
+
+    a:link {
+        color: #248A83;
+      }
+
+      a:visited {
+        color: #248A83;
+      }
+      a:hover, a:active {
+        color: #d99054;
+      }
 
 
+}
+}
+}
 
 
 .site-content {
@@ -433,7 +457,38 @@ img {
 
 
 
-/* Custom template */
+/* single products */
+
+.product-wrapper {
+    width: 1120px;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        text-transform: uppercase;
+        color: #d99054;
+        font-size: 2.1rem;
+        font-weight: 900;
+    }
+    
+    .product-image-wrapper {
+        width: 537.6px;
+    }
+
+    .product-description-wrapper{
+        width: 537.6px;
+        background-color: green;
+
+        .social-buttons {
+            display: flex;
+            .buttons {
+                background-color: white;
+            }
+        }
+    }
+
+}
 
 
 
