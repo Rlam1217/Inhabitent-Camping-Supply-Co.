@@ -253,6 +253,8 @@ body{
             }
             .product-description {
                 text-align: center;
+                padding-top: 16px;
+                padding-bottom: 24px;
             }
 
         }
@@ -503,6 +505,10 @@ img {
     .product-description-wrapper{
         width: 537.6px;
         background-color: green;
+        .price {
+            font-family: '.';
+            font-size: 1.8rem;
+        }
 
         .social-buttons {
             display: flex;
@@ -512,6 +518,48 @@ img {
         }
     }
 
+}
+
+
+// taxonomy product types
+
+
+.page-header{
+    width: 1120px;
+    p {
+        text-align: center;
+    }
+    .page-title {
+        padding-top: 4rem;
+        text-align: center;
+    }
+}
+
+.product-description{
+    text-align: center;
+}
+
+
+.taxonomy-content-container {
+    width: 1120px;
+    padding-top: 3rem;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    
+    .taxonomy-entry-content{
+        background-color: green;
+        width: 260px;
+       
+        .product-image-wrapper{
+            background-color: yellow;
+            width: 260px;
+            height: 260px;
+            img {
+                height: 260px;
+            }
+        }
+    }
 }
 
 

@@ -16,6 +16,7 @@ get_header(); ?>
         
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="product-image-wrapper"> 
+           
         <?php echo '<img src="' . CFS()->get( 'product_image' ) . '" alt="" />'; ?>
 
         <?php //echo '<img src="' . wp_get_attachment_url( 136 ) . '" alt="" />'; ?>
@@ -23,17 +24,18 @@ get_header(); ?>
         
         <div class="product-description-wrapper">
         <?php the_title( '<h1 class="product-entry-title">', '</h1>' ); ?>
+        <p class="price"><?php echo CFS()->get( 'price' ); ?></p>
             <?php get_template_part( 'template-parts/content' , 'page'); ?>
             
             <div class="social-buttons">
                 
-                <div class="buttons">
+                <div class="buttons-facebook">
                     <p><i class="fab fa-facebook-f"></i> LIKE</p>
                 </div>
-                <div class="buttons">
+                <div class="buttons-twitter">
                     <p><i class="fab fa-twitter"></i> TWEET</p>
                 </div>
-                <div class="buttons">
+                <div class="buttons-pinterest">
                     <p><i class="fab fa-pinterest-p"></i> PIN</p>
                 </div>
             </div>

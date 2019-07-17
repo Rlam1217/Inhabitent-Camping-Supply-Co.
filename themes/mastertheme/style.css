@@ -1074,7 +1074,9 @@ body {
         width: 70px;
         height: 70px; }
       .page-id-30 .site-content .product-info-container .product-type-wrapper .product-description {
-        text-align: center; }
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 24px; }
   .page-id-30 .site-content .journal-container {
     margin-left: auto;
     margin-right: auto;
@@ -1238,9 +1240,43 @@ body {
   .product-wrapper .product-description-wrapper {
     width: 537.6px;
     background-color: green; }
+    .product-wrapper .product-description-wrapper .price {
+      font-family: '.';
+      font-size: 1.8rem; }
     .product-wrapper .product-description-wrapper .social-buttons {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
       .product-wrapper .product-description-wrapper .social-buttons .buttons {
         background-color: white; }
+
+.page-header {
+  width: 1120px; }
+  .page-header p {
+    text-align: center; }
+  .page-header .page-title {
+    padding-top: 4rem;
+    text-align: center; }
+
+.product-description {
+  text-align: center; }
+
+.taxonomy-content-container {
+  width: 1120px;
+  padding-top: 3rem;
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .taxonomy-content-container .taxonomy-entry-content {
+    background-color: green;
+    width: 260px; }
+    .taxonomy-content-container .taxonomy-entry-content .product-image-wrapper {
+      background-color: yellow;
+      width: 260px;
+      height: 260px; }
+      .taxonomy-content-container .taxonomy-entry-content .product-image-wrapper img {
+        height: 260px; }
