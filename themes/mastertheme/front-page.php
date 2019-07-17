@@ -44,6 +44,11 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<div class="product-description">
 			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 		</div>
+		<div class="product-button-wrapper">
+			<a href="<?php echo get_tag_link(15); ?>"><div class="shop-button">
+				DO STUFF
+			</div></a>		
+		</div>	
 	</div>		
 
 	<div class="product-type-wrapper">
@@ -53,6 +58,11 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<div class="product-description">
 			<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
 		</div>
+		<div class="product-button-wrapper">
+			<a href="<?php echo get_tag_link(16); ?>"><div class="shop-button">
+				EAT STUFF
+			</div></a>		
+		</div>	
 	</div>	
 
 	<div class="product-type-wrapper">
@@ -62,6 +72,11 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<div class="product-description">
 			<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 		</div>
+		<div class="product-button-wrapper">
+			<a href="<?php echo get_tag_link(14); ?>"><div class="shop-button">
+				SLEEP STUFF
+			</div></a>		
+		</div>	
 	</div>	
 	
 	<div class="product-type-wrapper">
@@ -70,6 +85,11 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		</div>
 		<div class="product-description">
 			<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+		</div>
+		<div class="product-button-wrapper">
+			<a href="<?php echo get_tag_link(17); ?>"><div class="shop-button">
+				WEAR STUFF
+			</div></a>		
 		</div>		
 	</div>	
 </div>

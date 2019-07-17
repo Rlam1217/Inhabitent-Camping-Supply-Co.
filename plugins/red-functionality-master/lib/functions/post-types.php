@@ -16,7 +16,7 @@ function inhabitent_cpt_product() {
 		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Product Types', 'text_domain' ),
 		'name_admin_bar'        => __( 'Product', 'text_domain' ),
-		'archives'              => __( 'Product Archives', 'text_domain' ),
+		'archives'              => __( 'Product-Archives', 'text_domain' ),
 		'attributes'            => __( 'Product Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Product Item:', 'text_domain' ),
 		'all_items'             => __( 'All Items', 'text_domain' ),
