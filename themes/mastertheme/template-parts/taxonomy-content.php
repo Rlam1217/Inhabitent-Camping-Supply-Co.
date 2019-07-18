@@ -27,9 +27,9 @@
 <?php the_title( '<h2 class="taxonomy-title">', '</h2>' ); ?>
     <p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 
-    
-		
-	</div><!-- .entry-content -->
+	</div>
+	
+	<!-- .entry-content -->
 </article><!-- #post-## -->
 
 

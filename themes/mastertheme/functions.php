@@ -56,6 +56,8 @@ add_theme_support( 'custom-logo', array(
 
 
 
+
+
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
 

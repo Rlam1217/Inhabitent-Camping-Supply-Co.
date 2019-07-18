@@ -11,11 +11,19 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+			
+			<h1 class="page-title">Shop Stuff</h1>
+			</header>
+
+			<div class="product-categories"> 
+			<?php   $terms = get_terms( 'Product-taxonomy' ); // returns an array of posts
+                		?>
+                    	<?php foreach ( $terms as $term ) { ?>
+                    	<a href="<?php echo get_term_link($term)?>" class="taxonomy-title"><?php echo $term ->name; ?></a>
+                  		<?php }?>
+                	</div>
+			<!-- .page-header -->
+			
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
