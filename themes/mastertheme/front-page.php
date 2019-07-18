@@ -59,9 +59,9 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 			<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
 		</div>
 		<div class="product-button-wrapper">
-			<a href="<?php echo get_tag_link(16); ?>"><div class="shop-button">
-				EAT STUFF
-			</div></a>		
+			<div class="shop-button">	
+			<a href="<?php echo get_tag_link(16); ?>">EAT STUFF</a>	
+			</div>		
 		</div>	
 	</div>	
 
@@ -73,9 +73,9 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 			<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 		</div>
 		<div class="product-button-wrapper">
-			<a href="<?php echo get_tag_link(14); ?>"><div class="shop-button">
-				SLEEP STUFF
-			</div></a>		
+			<div class="shop-button">
+			<a href="<?php echo get_tag_link(14); ?>">SLEEP STUFF</a>
+			</div>		
 		</div>	
 	</div>	
 	
@@ -87,9 +87,9 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 			<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
 		</div>
 		<div class="product-button-wrapper">
-			<a href="<?php echo get_tag_link(17); ?>"><div class="shop-button">
-				WEAR STUFF
-			</div></a>		
+		<div class="shop-button">
+			<a href="<?php echo get_tag_link(17); ?>">WEAR STUFF</a>
+			</div>		
 		</div>		
 	</div>	
 </div>
