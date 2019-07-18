@@ -1057,7 +1057,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
-    background-color: peru;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1066,8 +1065,8 @@ body {
             justify-content: space-between; }
     .page-id-30 .site-content .product-info-container .product-type-wrapper {
       width: 263.2px;
-      border: 5px 1px 1px 1px;
-      border: solid;
+      border-style: solid;
+      border-width: 5px thin thin thin;
       padding: 12px; }
       .page-id-30 .site-content .product-info-container .product-type-wrapper .product-icon {
         margin: 0 auto;
@@ -1089,38 +1088,51 @@ body {
         font-size: .9rem;
         padding-top: 12px;
         padding-bottom: 12px; }
-  .page-id-30 .site-content .journal-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper {
-      width: 366px;
-      border: 1px solid; }
-      .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper img {
-        width: 365.7px;
-        height: 250px; }
-      .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta {
-        padding: 12px;
+  .page-id-30 .site-content .product-type-wrapper:hover {
+    border-color: #d99054; }
+
+.page-id-30 .journal-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .page-id-30 .journal-container .journal-thumbnail-wrapper {
+    width: 366px;
+    border: 1px solid; }
+    .page-id-30 .journal-container .journal-thumbnail-wrapper img {
+      width: 365.7px;
+      height: 250px; }
+    .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta {
+      padding: 12px;
+      color: black; }
+      .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta h3 {
+        padding-bottom: 25px;
+        font-family: '.';
+        font-weight: bold;
+        font-size: 1.3rem; }
+      .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a {
+        color: #248A83; }
+      .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:visited {
+        color: #248A83; }
+      .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:hover, .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:active {
         color: black; }
-        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:link {
-          color: #248A83; }
-        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:visited {
-          color: #248A83; }
-        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:hover, .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta a:active {
-          color: black; }
-        .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button {
-          background-color: white;
+      .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button {
+        color: black; }
+        .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button a {
+          background: #ffffff;
           color: black;
+          width: 137px;
           padding: 12px 24px;
-          width: 113px; }
-          .page-id-30 .site-content .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button a:link {
-            color: white; }
+          border: solid black;
+          font-family: '.'; }
+        .page-id-30 .journal-container .journal-thumbnail-wrapper .frontpage-entry-meta .read-button a:hover {
+          background: #248A83;
+          color: #ffffff; }
 
 /* About page */
 .page-id-85 h1 {

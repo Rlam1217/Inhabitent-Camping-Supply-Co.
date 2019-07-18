@@ -45,9 +45,9 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 		</div>
 		<div class="product-button-wrapper">
-			<a href="<?php echo get_tag_link(15); ?>"><div class="shop-button">
-				DO STUFF
-			</div></a>		
+			<div class="shop-button">
+			<a href="<?php echo get_tag_link(15); ?>">DO STUFF</a>
+			</div>		
 		</div>	
 	</div>		
 
@@ -119,12 +119,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 
 		<div class="frontpage-entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-			<?php // the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?>
-
-			
-
-
-			<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?> <?php the_title( '<h1 class="frontpage-entry-title">', '</h1>' ); ?></a>
+			<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?> <?php the_title( '<h3 class="frontpage-entry-title">', '</h3>' ); ?></a>
 		
 			
 	
@@ -132,10 +127,10 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 			
 			<?php // echo get_post_permalink( $id ); ?>
 			
-			<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>
-			<div class="read-button">Read Entry
+			
+			<div class="read-button"><?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>Read Entry</a>
 			</div>
-			</a>
+			
 			
 		
 			

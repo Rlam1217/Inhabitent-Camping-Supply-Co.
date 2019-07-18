@@ -1,4 +1,13 @@
-/*--------------------------------------------------------------
+
+
+
+
+
+
+
+
+        
+    /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 
@@ -236,14 +245,14 @@ body{
 
     .product-info-container {
         @include container;
-        background-color: peru;
+        
         display: flex;
         justify-content: space-between;
         
         .product-type-wrapper {
             width: 263.2px;
-            border: 5px 1px 1px 1px;
-            border: solid;
+            border-style: solid;
+            border-width: 5px thin thin thin;
             padding: 12px;
 
             .product-icon {
@@ -270,8 +279,14 @@ body{
                     padding-top: 12px;
                     padding-bottom: 12px;
                 }
+               
+                }
             }
 
+        }
+
+        .product-type-wrapper:hover {
+            border-color:#d99054;
         }
     }
 
@@ -289,7 +304,13 @@ body{
             .frontpage-entry-meta {
                 padding: 12px;
                 color: black;
-                a:link {
+                h3 {
+                    padding-bottom: 25px;
+                    font-family: '.';
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+                a {
                     color:#248A83;
                   }
             
@@ -302,12 +323,21 @@ body{
 
                 
                 .read-button {
-                    background-color: white;
+                   
                     color: black;
-                    padding: 12px 24px;
-                    width: 113px;
-                    a:link {
-                        color:white;
+                    
+                    
+                    a {
+                        background: #ffffff;
+                        color: black;
+                        width: 137px;
+                        padding: 12px 24px;
+                        border: solid black;
+                        font-family: '.';
+                      }
+                      a:hover {
+                        background:#248A83;
+                        color: #ffffff;
                       }
                     
                     }
@@ -317,7 +347,7 @@ body{
  
  }
 
-}
+
 
     
 
@@ -576,16 +606,6 @@ img {
         }
     }
 }
-
-
-
-
-
-
-
-
-        
-    
     
 
    
