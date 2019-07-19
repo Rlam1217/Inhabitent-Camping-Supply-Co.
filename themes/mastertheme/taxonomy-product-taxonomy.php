@@ -18,15 +18,17 @@ get_header(); ?>
 		<?php $taxonomy = get_queried_object(); ?>
 			<h1 class="page-title"><?php echo $taxonomy->name; ?></h1>
 			</header>
+
+
 			<p class="product-description"><?php echo $taxonomy->description; ?></p>
+		
+		
+
+		
 		<div id="primary" class="taxonomy-content-container">
-		
-
-		
-
 		<?php if ( have_posts() ) : ?>
 
-			<!-- .page-header -->
+			
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

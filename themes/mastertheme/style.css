@@ -1306,3 +1306,37 @@ body {
       height: 260px; }
       .taxonomy-content-container .taxonomy-entry-content .product-image-wrapper img {
         height: 260px; }
+
+.page-header {
+  width: 1120px; }
+  .page-header .shop-page-title {
+    text-align: center;
+    width: 1120px;
+    padding-top: 4rem; }
+
+.product-categories {
+  width: 1120px;
+  text-align: center;
+  background-color: blue; }
+
+.shop-content-container {
+  width: 1120px;
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .shop-content-container .shop-entry-content {
+    width: 260px;
+    height: 330px;
+    background-color: green; }
+    .shop-content-container .shop-entry-content .product-image-wrapper {
+      background-color: yellow;
+      width: 260px;
+      height: 260px; }
+      .shop-content-container .shop-entry-content .product-image-wrapper img {
+        height: 260px; }

@@ -21,8 +21,10 @@
 
 	<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>
         <div class="product-image-wrapper">
-        <?php echo '<img src="' . CFS()->get( 'product_image' ) . '" alt="" />'; ?>
+		<?php echo '<img src="' . CFS()->get( 'product_image' ) . '" alt="" />'; ?>
 		</div></a>
+		<?php the_title( '<h2 class="taxonomy-title">', '</h2>' ); ?>
+    	<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 	
 	</div>
 	

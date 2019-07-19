@@ -25,19 +25,14 @@
 					<div class="site-branding">
 						<div class="logo">
 						        
-  
-						<?php if (! is_front_page() && ! is_page('about')) {
+<?php if (! is_front_page() && ! is_page('about')) { ?>
  
- echo '<img src="' . wp_get_attachment_url( 58 ) . '" alt="" />';
- 
-} else { the_custom_logo();
-	
-}
+ <a href="<?php echo get_home_url()?>"> <img src="<?php echo wp_get_attachment_url( 58 )?>" alt="" /></a>
 
-?>
+<?php } else { the_custom_logo();
 
+} ?>
 
- 
 
 					
 					

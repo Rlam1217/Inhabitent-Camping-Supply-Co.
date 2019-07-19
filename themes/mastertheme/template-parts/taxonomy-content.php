@@ -9,16 +9,13 @@
 <div class="taxonomy-entry-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-		
-
-
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+			
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	
 
 	<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>
         <div class="product-image-wrapper">
