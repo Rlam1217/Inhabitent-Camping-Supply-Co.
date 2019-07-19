@@ -22,18 +22,19 @@ get_header(); ?>
 			<?php endif; ?>
             <div class="journal-posts">
 			<?php /* Start the Loop */ ?>
+			
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			
 			
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<?php get_template_part( 'template-parts/content-journal' ); ?>
 				
-				<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>
-			<div class="readmore-button">Read More → </div>
-			</a>
+				
+			
+			
 			<?php endwhile; ?>
 			
-
+			
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
