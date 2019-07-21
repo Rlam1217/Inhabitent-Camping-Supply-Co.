@@ -1383,3 +1383,44 @@ body {
       height: 260px; }
       .shop-content-container .shop-entry-content .product-image-wrapper img {
         height: 260px; }
+
+.search-site-main a {
+  color: #248a83; }
+
+.search-site-main article {
+  border-top: dashed;
+  padding-top: 30px; }
+
+.search-site-main .search-page-title {
+  font-weight: bold;
+  font-size: 2.4rem; }
+
+.search-site-main .search-entry-title {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #248a83; }
+  .search-site-main .search-entry-title a {
+    color: #248a83; }
+  .search-site-main .search-entry-title a:visited {
+    color: #248A83; }
+  .search-site-main .search-entry-title a:hover, .search-site-main .search-entry-title a:active {
+    color: black; }
+
+.search-site-main .entry-summary {
+  background-color: red; }
+
+.search-site-main .search-pagination {
+  background-color: yellow;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  border-top: dashed; }
+  .search-site-main .search-pagination a {
+    color: white;
+    background: #248a83;
+    padding: 5px; }
+  .search-site-main .search-pagination a:visited {
+    color: white; }
+  .search-site-main .search-pagination a:hover, .search-site-main .search-pagination a:active {
+    background: black; }
+  .search-site-main .search-pagination .page-numbers {
+    background: #248a83; }

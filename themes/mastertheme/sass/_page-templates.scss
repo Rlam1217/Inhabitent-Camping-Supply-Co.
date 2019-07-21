@@ -709,6 +709,65 @@ img {
     }
     
 
-    
+    // search
 
+    .search-site-main{
+        a {
+            color: #248a83;
+        }
 
+        article {
+            border-top: dashed;
+            padding-top: 30px;
+            
+        }
+    .search-page-title{
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+
+    .search-entry-title{
+        font-weight: bold;
+        font-size: 2.4rem;
+        color: #248a83;
+        a {
+            color: #248a83;
+        }
+        a:visited {
+            color:#248A83;
+          }
+
+        a:hover, a:active {
+            color: black;
+        }
+    }
+
+    .entry-summary{
+        background-color: red;
+    }
+
+    .search-pagination{
+        background-color: yellow;
+        padding-top: 25px;
+        padding-bottom: 45px;
+        border-top: dashed;
+
+        a {
+            color: white;
+            background: #248a83;
+            padding: 5px;
+        }
+        a:visited {
+            color: white;
+          }
+
+        a:hover, a:active {
+            background: black;
+        }
+        .page-numbers {
+            background: #248a83;
+            
+        }
+    }
+
+    }
