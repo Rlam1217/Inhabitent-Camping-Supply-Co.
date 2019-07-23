@@ -1,21 +1,41 @@
-# RED Starter
+# Inhabitent Site
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+The Inhabitent site is a multi-page website with a blog for a camping supply company using WordPress as a content management system.
 
-## Installation
+## Technologies Used
 
-### 1. Download me (don't clone me!)
+1. Wordpress 
+2. Underscores starter theme
+3. Gulp and it's dependencies
+4. Wordpress plugin-ins : Custom Field Suite, Inhabitent Blocks, Inhabitent Business Hours Widget, Show Current Template
 
-Then add me to your `wp-content` directory.
+## WordPress/PHP
 
-### 2. Rename the `redstarter-master` directory
+* Built with WordPress as CMS
+* Custom post type for “Products”
+* Custom a taxonomy for “Product Type”
+* Custom Business Hours widget to easily edit business hours by the client
+* Custom Field Suite plugins allows client to add price of products
 
-Make sure that the theme directory name is project appropriate!
+## HTML
 
-### 3. Install the dev dependencies
+HTML5 doctype
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+## SASS/CSS
 
-### 4. Update the proxy in `gulpfile.js`
+* Sass as a preprocessor
+* Implements layout using flexbox
+* Incorporate custom fonts using @font-face
+* Uses Font Awesome for icon fonts
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+## JS/jQuery
+
+* Incorporates a toggle-able expanding search bar to the site header
+
+## Personal Learnings
+
+* Use WordPress as a content management system
+* Wordpress template hierarchy
+* PHP and SASS, for the creation of page templates
+
+
