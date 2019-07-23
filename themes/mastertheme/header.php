@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -30,7 +29,6 @@
  <a href="<?php echo get_home_url()?>"> <img src="<?php echo wp_get_attachment_url( 58 )?>" alt="" /></a>
 
 <?php } else { the_custom_logo();
-
 } ?>
 
 

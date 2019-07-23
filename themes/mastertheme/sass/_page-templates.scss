@@ -1,13 +1,4 @@
-
-
-
-
-
-
-
-
-        
-    /*--------------------------------------------------------------
+   /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 
@@ -37,7 +28,7 @@ body{
         color: #d99054;
       }
 
-      
+     
       
 
 
@@ -86,23 +77,67 @@ body{
     font-size: 1.1rem;
     display: flex;
     align-items: center;
-    text-transform: uppercase; 
-    .search-bar {
-        .search-form{
+    text-transform: uppercase;
+    .wrapper{
+        fieldset {
+            padding: 0px;
+            border: 0px;
+            margin-left: 12px;
             
-            fieldset {
-                border: 0;
-                padding: 0;
-                label { background-color: transparent;
-                .search-field{
-                    padding: 0;
-                    font-size: .9rem;
-                    font-family: '.';
-                }
-                }
-            }
         }
-    }     
+        .search-container{
+          width: 0px;
+          height: 35px;
+          background: transparent;
+          text-align: center;
+          line-height: 20px;
+          padding-left: 12px;
+          transition: all 0.5s ease;
+          position: relative;
+          
+          ::placeholder{
+              color: white;
+              font-size: .9rem;
+          }
+
+          *:focus {
+            outline: none;
+        }
+        
+          .fa{
+            color: white;
+          position: absolute;
+          right: 3px;
+          top: 8px;
+          cursor: pointer;
+        }
+        
+        
+        .search-field{
+          border: 0px;
+          background: transparent;
+          width: 0%;
+          padding: 5px 0;
+          color: #ffffff;
+          transition: all 0.5s ease;
+        }   
+        }
+        
+        .search-container.active{
+            width: 250px;
+            padding-left: 25px;
+            transition: all 0.5s ease;
+          }
+          
+          .search-field.active{
+            width: 95%;
+            padding-left: 5px;
+            transition: all 0.5s 0.8s ease;
+          }
+        
+       
+        }
+        
     }
     
     .menu-item {
@@ -127,6 +162,16 @@ body{
       }
       a:hover, a:active {
         color: #d99054;
+      }
+
+      .wrapper{
+        .search-container{
+            .fa{
+                color: #248A83;
+              position: absolute;
+              right: 3px;
+              top: 8px;}
+        }
       }
 
 
@@ -283,7 +328,8 @@ body{
             }
             .product-description {
                 text-align: center;
-                padding-top: 16px;    
+                padding-top: 16px; 
+                font-family: 'Merriweather';
                 font-size: .9rem;
                 line-height: 1.5rem;
             }
@@ -320,6 +366,8 @@ body{
         @include container;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 80px;
+       
 
         .journal-thumbnail-wrapper{
             width: 366px;
@@ -471,7 +519,7 @@ img {
 .entry-title-post{
     background-color: #248a83;
     color: white;
-    font-family: 'novecento_sans_widedemibold';
+    font-family: '.';
     position: absolute;
     font-size: 2rem;
     width: 500px;
@@ -486,6 +534,10 @@ img {
     position: absolute;
     bottom: 7px;
     right: 1px;
+}
+
+.entry-content {
+        font-family: 'Merriweather';
 }
     } 
 
@@ -717,13 +769,14 @@ img {
         }
 
         article {
-            border-top: dashed;
+           
             padding-top: 30px;
             
         }
     .search-page-title{
         font-weight: bold;
         font-size: 2.4rem;
+        border-bottom: dashed;
     }
 
     .search-entry-title{
@@ -770,4 +823,12 @@ img {
         }
     }
 
-    }
+}
+
+
+
+
+
+
+
+        

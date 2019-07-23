@@ -951,15 +951,55 @@ body {
           -ms-flex-align: center;
               align-items: center;
       text-transform: uppercase; }
-      .site-header .site-branding .main-navigation .search-bar .search-form fieldset {
-        border: 0;
-        padding: 0; }
-        .site-header .site-branding .main-navigation .search-bar .search-form fieldset label {
-          background-color: transparent; }
-          .site-header .site-branding .main-navigation .search-bar .search-form fieldset label .search-field {
-            padding: 0;
-            font-size: .9rem;
-            font-family: '.'; }
+      .site-header .site-branding .main-navigation .wrapper fieldset {
+        padding: 0px;
+        border: 0px;
+        margin-left: 12px; }
+      .site-header .site-branding .main-navigation .wrapper .search-container {
+        width: 0px;
+        height: 35px;
+        background: transparent;
+        text-align: center;
+        line-height: 20px;
+        padding-left: 12px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        position: relative; }
+        .site-header .site-branding .main-navigation .wrapper .search-container ::-webkit-input-placeholder {
+          color: white;
+          font-size: .9rem; }
+        .site-header .site-branding .main-navigation .wrapper .search-container ::-ms-input-placeholder {
+          color: white;
+          font-size: .9rem; }
+        .site-header .site-branding .main-navigation .wrapper .search-container ::placeholder {
+          color: white;
+          font-size: .9rem; }
+        .site-header .site-branding .main-navigation .wrapper .search-container *:focus {
+          outline: none; }
+        .site-header .site-branding .main-navigation .wrapper .search-container .fa {
+          color: white;
+          position: absolute;
+          right: 3px;
+          top: 8px;
+          cursor: pointer; }
+        .site-header .site-branding .main-navigation .wrapper .search-container .search-field {
+          border: 0px;
+          background: transparent;
+          width: 0%;
+          padding: 5px 0;
+          color: #ffffff;
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+      .site-header .site-branding .main-navigation .wrapper .search-container.active {
+        width: 250px;
+        padding-left: 25px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+      .site-header .site-branding .main-navigation .wrapper .search-field.active {
+        width: 95%;
+        padding-left: 5px;
+        -webkit-transition: all 0.5s 0.8s ease;
+        transition: all 0.5s 0.8s ease; }
     .site-header .site-branding .menu-item {
       padding: 0 12px; }
 
@@ -971,6 +1011,11 @@ body {
     color: #248A83; }
   .green-header .site-header .main-navigation a:hover, .green-header .site-header .main-navigation a:active {
     color: #d99054; }
+  .green-header .site-header .main-navigation .wrapper .search-container .fa {
+    color: #248A83;
+    position: absolute;
+    right: 3px;
+    top: 8px; }
 
 .site-content {
   background-color: purple;
@@ -1090,6 +1135,7 @@ body {
       .page-id-30 .site-content .product-info-container .product-type-wrapper .product-description {
         text-align: center;
         padding-top: 16px;
+        font-family: 'Merriweather';
         font-size: .9rem;
         line-height: 1.5rem; }
       .page-id-30 .site-content .product-info-container .product-type-wrapper .product-button-wrapper .shop-button {
@@ -1116,7 +1162,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-bottom: 80px; }
   .page-id-30 .journal-container .journal-thumbnail-wrapper {
     width: 366px;
     border: 1px solid; }
@@ -1206,7 +1253,7 @@ body {
 .journal-posts .entry-title-post {
   background-color: #248a83;
   color: white;
-  font-family: 'novecento_sans_widedemibold';
+  font-family: '.';
   position: absolute;
   font-size: 2rem;
   width: 500px;
@@ -1220,6 +1267,9 @@ body {
   position: absolute;
   bottom: 7px;
   right: 1px; }
+
+.journal-posts .entry-content {
+  font-family: 'Merriweather'; }
 
 /* single posts */
 .entry-header {
@@ -1388,12 +1438,12 @@ body {
   color: #248a83; }
 
 .search-site-main article {
-  border-top: dashed;
   padding-top: 30px; }
 
 .search-site-main .search-page-title {
   font-weight: bold;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  border-bottom: dashed; }
 
 .search-site-main .search-entry-title {
   font-weight: bold;
