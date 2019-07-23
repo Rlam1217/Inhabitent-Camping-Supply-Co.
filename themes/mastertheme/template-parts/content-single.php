@@ -33,7 +33,6 @@
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 		<div class="social-buttons">
-                
                 <div class="buttons-socialmedia">
                     <p><i class="fab fa-facebook-f"></i> LIKE</p>
                 </div>

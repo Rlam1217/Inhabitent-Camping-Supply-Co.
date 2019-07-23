@@ -11,12 +11,10 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-content-container">
-					
 						<div class="contact">
 							<h3>Contact Info</h3>
 							<p>info@inhabitent.com</p>
 							<p>778-456-7891</p>
-							<p>
 								<i class="fab fa-facebook-square"></i>
 								<i class="fab fa-twitter-square"></i>
 								<i class="fab fa-google-plus-square"></i>

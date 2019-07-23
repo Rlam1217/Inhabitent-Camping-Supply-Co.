@@ -25,15 +25,10 @@
 						<div class="logo">
 						        
 <?php if (! is_front_page() && ! is_page('about')) { ?>
- 
  <a href="<?php echo get_home_url()?>"> <img src="<?php echo wp_get_attachment_url( 58 )?>" alt="" /></a>
-
 <?php } else { the_custom_logo();
 } ?>
 
-
-					
-					
 						</div>
 
 
@@ -46,9 +41,7 @@
 						<?php get_search_form(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
-</div>
-				
-
+				</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

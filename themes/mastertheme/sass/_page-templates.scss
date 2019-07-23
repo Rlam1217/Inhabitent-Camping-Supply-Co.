@@ -1,4 +1,4 @@
-   /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 
@@ -30,6 +30,29 @@ body{
 
      
       .entry-footer {
+        .cat-links {
+            padding-right: 10px;
+            a:link {
+                color: black;
+              }
+              a:visited {
+                color: black;
+              }
+              a:hover, a:active {
+                color: #d99054;
+              }
+        }
+        .tags-links {
+            a:link {
+                color: black;
+              }
+              a:visited {
+                color: black;
+              }
+              a:hover, a:active {
+                color: #d99054;
+              }
+        }
         .social-buttons {
             padding-top: 20px;
             width: 275px;
@@ -129,10 +152,10 @@ body{
         
           .fa{
             color: white;
-          position: absolute;
-          right: 3px;
-          top: 8px;
-          cursor: pointer;
+            position: absolute;
+            right: 3px;
+            top: 8px;
+            cursor: pointer;
         }
         
         
@@ -220,17 +243,23 @@ body{
        
         
     }
+
+    //sidebar
  
     .widget-area{
         width: 302.39px;
         padding-top: 90px;
         padding-left: 56px;
+        ul {
+            list-style: none;
+            margin: 0;
         li {
             a {
                 color: #248A83; }
                 a:hover, a:active {
                     color: black;
                   }
+        }
         }
         
         h2 {
@@ -295,20 +324,11 @@ body{
         }
      } 
      .site-info{
-        
         margin: 0 auto;
     }
 
 }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -356,7 +376,6 @@ body{
         display: flex;
         justify-content: space-between;
         padding-bottom: 12px;
-        
         .product-type-wrapper {
             width: 263.2px;
             border-style: solid;
@@ -867,6 +886,42 @@ img {
     }
 
 }
+
+
+// 404page //
+.page-content {
+    fieldset {
+        border: 0px;
+    }
+    .widgettitle{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: '.';
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+
+        
+        li {
+            line-height: 1.5rem;
+            a {
+                color: #248a83;
+            }
+            a:visited {
+                color: #248a83;
+              }
+    
+            a:hover, a:active {
+                color: black;
+            }
+        }
+    }
+    
+}
+
 
 
 
