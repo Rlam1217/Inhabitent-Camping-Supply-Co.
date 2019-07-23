@@ -16,23 +16,19 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<div class="product-categories"> 
-			<?php   $terms = get_terms( 'Product-taxonomy' ); // returns an array of posts
+				<?php   $terms = get_terms( 'Product-taxonomy' ); // returns an array of posts
                 		?>
                     	<?php foreach ( $terms as $term ) { ?>
                     	<a href="<?php echo get_term_link($term)?>" class="taxonomy-title"><?php echo $term ->name; ?></a>
                   		<?php }?>
                 	</div>
 
-
-					<div id="primary" class="shop-content-container">
-					
-
-		<?php if ( have_posts() ) : ?>
+			<div id="primary" class="shop-content-container">
+				<?php if ( have_posts() ) : ?>
 
 			
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php
 					get_template_part( 'template-parts/content-archive-products' );
 				?>
