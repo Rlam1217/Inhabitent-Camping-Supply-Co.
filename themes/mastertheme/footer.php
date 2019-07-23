@@ -25,10 +25,11 @@
 					
 					
 						<div class="business-hours">
-							<h3>Business Hours</h3>
-							<p>Monday-Friday: 9am to 5pm</p>
-							<p>Saturday: 10am to 2pm</p>
-							<p>Sunday: Closed</p>
+							<?php
+								if(is_active_sidebar('footer-sidebar-2')){
+								dynamic_sidebar('footer-sidebar-2');
+								}
+							?>
 						</div>
 					
 					

@@ -72,8 +72,8 @@ body{
    
     
   .main-navigation {
-      color: white;
-    font-family: $font__code;
+    color: white;
+    font-family: '.';
     font-size: 1.1rem;
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ body{
           padding-left: 12px;
           transition: all 0.5s ease;
           position: relative;
-          
+
           ::placeholder{
               color: white;
               font-size: .9rem;
@@ -152,6 +152,8 @@ body{
     
      .main-navigation{
     color: #248A83;
+    font-family: '.';
+    font-size: 1.1rem;
 
     a:link {
         color: #248A83;
@@ -206,6 +208,11 @@ body{
         .bold{
             font-weight: bold;
         }
+        .widget{
+        .day-of-week{
+            font-weight: bold;
+        }
+    }
     }
 }
 
@@ -776,7 +783,7 @@ img {
     .search-page-title{
         font-weight: bold;
         font-size: 2.4rem;
-        border-bottom: dashed;
+        border-bottom: 1px solid #e1e1e1;
     }
 
     .search-entry-title{
@@ -797,13 +804,30 @@ img {
 
     .entry-summary{
         background-color: red;
+        padding-bottom: 15px;
+        .readmore-button {
+           
+            a {
+                background: #ffffff;
+                border: solid black;
+                color: black;
+                width: 137px;
+                padding: 12px 24px;
+                font-family: '.';
+              }
+              a:hover {
+                background:#248A83;
+                color: #ffffff;
+              }
+        }
     }
 
     .search-pagination{
+        width: 817.61px;
         background-color: yellow;
         padding-top: 25px;
         padding-bottom: 45px;
-        border-top: dashed;
+        border-top: 1px solid #e1e1e1;
 
         a {
             color: white;

@@ -942,7 +942,7 @@ body {
         height: 33px; }
     .site-header .site-branding .main-navigation {
       color: white;
-      font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+      font-family: '.';
       font-size: 1.1rem;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1004,7 +1004,9 @@ body {
       padding: 0 12px; }
 
 .green-header .site-header .main-navigation {
-  color: #248A83; }
+  color: #248A83;
+  font-family: '.';
+  font-size: 1.1rem; }
   .green-header .site-header .main-navigation a:link {
     color: #248A83; }
   .green-header .site-header .main-navigation a:visited {
@@ -1041,6 +1043,8 @@ body {
       font-size: 1.3rem;
       font-weight: 900; }
     .site-content .widget-area .bold {
+      font-weight: bold; }
+    .site-content .widget-area .widget .day-of-week {
       font-weight: bold; }
 
 .site-footer {
@@ -1443,7 +1447,7 @@ body {
 .search-site-main .search-page-title {
   font-weight: bold;
   font-size: 2.4rem;
-  border-bottom: dashed; }
+  border-bottom: 1px solid #e1e1e1; }
 
 .search-site-main .search-entry-title {
   font-weight: bold;
@@ -1457,13 +1461,25 @@ body {
     color: black; }
 
 .search-site-main .entry-summary {
-  background-color: red; }
+  background-color: red;
+  padding-bottom: 15px; }
+  .search-site-main .entry-summary .readmore-button a {
+    background: #ffffff;
+    border: solid black;
+    color: black;
+    width: 137px;
+    padding: 12px 24px;
+    font-family: '.'; }
+  .search-site-main .entry-summary .readmore-button a:hover {
+    background: #248A83;
+    color: #ffffff; }
 
 .search-site-main .search-pagination {
+  width: 817.61px;
   background-color: yellow;
   padding-top: 25px;
   padding-bottom: 45px;
-  border-top: dashed; }
+  border-top: 1px solid #e1e1e1; }
   .search-site-main .search-pagination a {
     color: white;
     background: #248a83;
