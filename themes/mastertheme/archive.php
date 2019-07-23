@@ -1,3 +1,5 @@
+<div class="green-header">
+
 <?php
 /**
  * The template for displaying archive pages.
@@ -44,3 +46,4 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+</div>

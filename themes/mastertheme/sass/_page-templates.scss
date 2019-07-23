@@ -29,7 +29,31 @@ body{
       }
 
      
-      
+      .entry-footer {
+        .social-buttons {
+            padding-top: 20px;
+            width: 275px;
+            display: flex;
+            justify-content: space-between;
+            .buttons-socialmedia {
+                p {
+                    font-size: .8rem;
+                    padding: .5rem 1rem .5rem 1rem;
+                    background: #ffffff;
+                    color: black;
+                    border: solid black;
+                    border-width: thin;
+                }
+                p:hover {
+                        background:#248A83;
+                        color: #ffffff;
+                }
+
+                
+            }
+        }
+
+      }
 
 
 }
@@ -44,7 +68,6 @@ body{
 
 
 .site-header {
-    
     background-color: transparent;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -168,6 +191,11 @@ body{
 
       .wrapper{
         .search-container{
+            ::placeholder{
+                color: grey;
+                font-size: .9rem;
+            }
+
             .fa{
                 color: #248A83;
               position: absolute;
@@ -183,14 +211,13 @@ body{
 
 
 .site-content {
-    background-color: purple;
     @include container;
     display: flex;
     .content-area{
         width: 817.61px;
         padding-top: 90px;
         padding-right: 56px;
-        background-color:blue;
+       
         
     }
  
@@ -198,19 +225,26 @@ body{
         width: 302.39px;
         padding-top: 90px;
         padding-left: 56px;
-        background-color: yellow;
+        li {
+            a {
+                color: #248A83; }
+                a:hover, a:active {
+                    color: black;
+                  }
+        }
+        
         h2 {
-            margin-bottom: 24px;
-            text-transform: uppercase;
+        margin-bottom: 24px;
+        text-transform: uppercase;
         font-size: 1.3rem;
         font-weight: 900;
         }
         .bold{
-            font-weight: bold;
+        font-weight: bold;
         }
         .widget{
         .day-of-week{
-            font-weight: bold;
+        font-weight: bold;
         }
     }
     }
@@ -240,14 +274,15 @@ body{
         color: white;
     }
     .contact{
-        
         flex-basis: 25%;
         margin: 3rem 0;
     }
     .business-hours{
-        
         flex-basis: 25%;
         margin: 3rem 0;
+        .day-of-week {
+            font-weight: bold;
+        }
     }
     .text-logo{
        
@@ -325,6 +360,7 @@ body{
         .product-type-wrapper {
             width: 263.2px;
             border-style: solid;
+            border-color: #e1e1e1;
             border-width: 5px thin thin thin;
             padding: 12px 12px 24px 12px;
 
@@ -344,7 +380,6 @@ body{
                 .shop-button{
                    text-align: center;
                     a {
-                        
                         background: #248a83;
                         color: white;
                         width: 137px;
@@ -355,7 +390,6 @@ body{
                       }
                       a:hover {
                         background:#0f3b38;
-                        
                       }
                 }
                
@@ -374,11 +408,10 @@ body{
         display: flex;
         justify-content: space-between;
         padding-bottom: 80px;
-       
-
         .journal-thumbnail-wrapper{
             width: 366px;
             border: 1px solid;
+            border-color: #e1e1e1;
          img{   width: 365.7px;
             height: 250px;}
 
@@ -404,16 +437,14 @@ body{
 
                 
                 .read-button {
-                   
                     color: black;
-                    
-                    
                     a {
                         background: #ffffff;
                         color: black;
                         width: 137px;
                         padding: 12px 24px;
                         border: solid black;
+                        border-width: thin;
                         font-family: '.';
                       }
                       a:hover {
@@ -457,17 +488,15 @@ body{
 
     h2 {
         text-transform: uppercase;
-            font-size: 2.1rem;
-            font-weight: 900;
+        font-size: 2.1rem;
+        font-weight: 900;
 
     }
     .site-content{
-        
         width: 100%;
         .content-area{
             width: 100%;
             padding: 0 0 0 0;
-            
         }
     }
 
@@ -503,6 +532,8 @@ body{
             color: black;
             width: 137px;
             padding: 12px 24px;
+            border: solid black;
+            border-width: thin;
             font-family: '.';
           }
           a:hover {
@@ -633,7 +664,6 @@ img {
 
     .product-description-wrapper{
         width: 537.6px;
-        background-color: green;
         .price {
             font-family: '.';
             font-size: 1.8rem;
@@ -650,6 +680,7 @@ img {
                     background: #ffffff;
                     color: black;
                     border: solid black;
+                    border-width: thin;
                 }
                 p:hover {
                         background:#248A83;
@@ -675,28 +706,22 @@ img {
     }
     p {
         text-align: center;
-    }
-    
+    } 
 }
 
 .product-description{
     text-align: center;
-    background-color: yellow;
 }
 
 .taxonomy-content-container {
     width: 1120px;
     padding-top: 3rem;
-    background-color: blue;
+    border-top: 1px dashed #c8c8c8;
     display: flex;
     justify-content: space-between;
-    
     .taxonomy-entry-content{
-        background-color: green;
         width: 260px;
-       
         .product-image-wrapper{
-            background-color: yellow;
             width: 260px;
             height: 260px;
             img {
@@ -720,7 +745,6 @@ img {
        
         width: 1120px;
         text-align: center;
-        background-color: yellow;
         margin-bottom: 1.5rem;
         a {
             color: #248a83;
@@ -744,7 +768,7 @@ img {
 
     .shop-content-container {
             width: 1120px;
-            border-top: dashed;
+            border-top: 1px dashed #c8c8c8;
             padding-top: 3rem;
             padding-bottom: 3rem;
             display: flex;
@@ -753,11 +777,7 @@ img {
         .shop-entry-content {
             width: 260px;
             height: 330px;
-           
-            background-color: green;
-       
         .product-image-wrapper{
-            background-color: yellow;
             width: 260px;
             height: 260px;
             img {
@@ -803,13 +823,13 @@ img {
     }
 
     .entry-summary{
-        background-color: red;
         padding-bottom: 15px;
         .readmore-button {
            
             a {
                 background: #ffffff;
                 border: solid black;
+                border-width: thin;
                 color: black;
                 width: 137px;
                 padding: 12px 24px;
@@ -824,7 +844,6 @@ img {
 
     .search-pagination{
         width: 817.61px;
-        background-color: yellow;
         padding-top: 25px;
         padding-bottom: 45px;
         border-top: 1px solid #e1e1e1;
