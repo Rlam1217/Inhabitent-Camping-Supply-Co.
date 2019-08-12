@@ -1,12 +1,9 @@
-<div class="green-header">
-
 <?php
 /**
  * The template for displaying all pages.
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -26,4 +23,5 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
-</div>
+
+

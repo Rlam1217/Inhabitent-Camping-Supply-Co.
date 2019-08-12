@@ -1,0 +1,39 @@
+.green-nav{
+ li {
+  a:link {
+    color: #248A83;
+  }
+
+  a:visited {
+    color: #248A83;
+  }
+  a:hover, a:active {
+    color: #d99054;
+  }
+
+ }
+
+.search-bar{
+ .wrapper{
+ fieldset{
+  label {
+    .search-container{
+    .search-field.active{
+      color: black;
+      &::placeholder{
+        color: black;
+      }
+  }
+
+ .icon-search {
+  .fa {
+    color:#248A83;
+          }
+        }
+      }
+    }
+  }
+}
+}
+
+}

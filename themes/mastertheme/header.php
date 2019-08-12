@@ -15,7 +15,14 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<?php if (! is_front_page() && ! is_page('about')) { 
+	$green_header = array( 'green-nav' ); 
+	} else {$green_header = array(); 
+
+	} 
+	?>
+
+	<body <?php body_class( $green_header); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>	
 
@@ -26,6 +33,7 @@
 						        
 <?php if (! is_front_page() && ! is_page('about')) { ?>
  <a href="<?php echo get_home_url()?>"> <img src="<?php echo wp_get_attachment_url( 58 )?>" alt="" /></a>
+ 
 <?php } else { the_custom_logo();
 } ?>
 
@@ -33,7 +41,7 @@
 
 
 					<!-- .site-branding -->
-
+				
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

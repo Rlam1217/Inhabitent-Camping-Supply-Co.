@@ -1036,31 +1036,6 @@ body {
     .site-header .site-branding .menu-item {
       padding: 0 12px; }
 
-.green-header .site-header .main-navigation {
-  color: #248A83;
-  font-family: '.';
-  font-size: 1.1rem; }
-  .green-header .site-header .main-navigation a:link {
-    color: #248A83; }
-  .green-header .site-header .main-navigation a:visited {
-    color: #248A83; }
-  .green-header .site-header .main-navigation a:hover, .green-header .site-header .main-navigation a:active {
-    color: #d99054; }
-  .green-header .site-header .main-navigation .wrapper .search-container ::-webkit-input-placeholder {
-    color: grey;
-    font-size: .9rem; }
-  .green-header .site-header .main-navigation .wrapper .search-container ::-ms-input-placeholder {
-    color: grey;
-    font-size: .9rem; }
-  .green-header .site-header .main-navigation .wrapper .search-container ::placeholder {
-    color: grey;
-    font-size: .9rem; }
-  .green-header .site-header .main-navigation .wrapper .search-container .fa {
-    color: #248A83;
-    position: absolute;
-    right: 3px;
-    top: 8px; }
-
 .site-content {
   margin-left: auto;
   margin-right: auto;
@@ -1558,3 +1533,24 @@ body {
       color: #248a83; }
     .page-content ul li a:hover, .page-content ul li a:active {
       color: black; }
+
+.green-nav li a:link {
+  color: #248A83; }
+
+.green-nav li a:visited {
+  color: #248A83; }
+
+.green-nav li a:hover, .green-nav li a:active {
+  color: #d99054; }
+
+.green-nav .search-bar .wrapper fieldset label .search-container .search-field.active {
+  color: black; }
+  .green-nav .search-bar .wrapper fieldset label .search-container .search-field.active::-webkit-input-placeholder {
+    color: black; }
+  .green-nav .search-bar .wrapper fieldset label .search-container .search-field.active::-ms-input-placeholder {
+    color: black; }
+  .green-nav .search-bar .wrapper fieldset label .search-container .search-field.active::placeholder {
+    color: black; }
+
+.green-nav .search-bar .wrapper fieldset label .search-container .icon-search .fa {
+  color: #248A83; }
