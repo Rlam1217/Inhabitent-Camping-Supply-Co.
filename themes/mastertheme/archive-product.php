@@ -17,7 +17,7 @@ get_header(); ?>
 			<div class="product-categories"> 
 				<?php   $terms = get_terms( 'Product-taxonomy' ); // returns an array of posts
                 		?>
-                    	<?php foreach ( $terms as $term ) { ?>
+						<?php foreach ( $terms as $term ) { ?>
                     	<a href="<?php echo get_term_link($term)?>" class="taxonomy-title"><?php echo $term ->name; ?></a>
                   		<?php }?>
                 	</div>

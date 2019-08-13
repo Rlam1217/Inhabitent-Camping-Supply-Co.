@@ -29,14 +29,11 @@
 			<header id="masthead" class="site-header" role="banner">
 					
 					<div class="site-branding">
-						<div class="logo">
-						        
-<?php if (! is_front_page() && ! is_page('about')) { ?>
- <a href="<?php echo get_home_url()?>"> <img src="<?php echo wp_get_attachment_url( 58 )?>" alt="" /></a>
- 
-<?php } else { the_custom_logo();
-} ?>
-
+						<div class="logo">    
+							<?php if (! is_front_page() && ! is_page('about')) { ?>
+ 							<a href="<?php echo get_home_url()?>"> <img src="<?php echo wp_get_attachment_url( 58 )?>" alt="" /></a>
+						<?php } else { the_custom_logo();
+							} ?>
 						</div>
 
 

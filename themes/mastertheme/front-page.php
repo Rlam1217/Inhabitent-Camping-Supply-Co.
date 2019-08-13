@@ -36,64 +36,28 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 
 <h2>Shop Stuff</h2>
 <div class="product-info-container">
-	<div class="product-type-wrapper">
-		<div class="product-icon">
-			<?php echo '<img src="' . wp_get_attachment_url( 189 ) . '" alt="" />'; ?> 
-		</div>
-		<div class="product-description">
-			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-		</div>
-		<div class="product-button-wrapper">
-			<div class="shop-button">
-			<a href="<?php echo get_tag_link(15); ?>">DO STUFF</a>
-			</div>		
-		</div>	
-	</div>		
-
-	<div class="product-type-wrapper">
-		<div class="product-icon">
-		<?php echo '<img src="' . wp_get_attachment_url( 190 ) . '" alt="" />'; ?> 
-		</div>
-		<div class="product-description">
-			<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-		</div>
-		<div class="product-button-wrapper">
-			<div class="shop-button">	
-			<a href="<?php echo get_tag_link(16); ?>">EAT STUFF</a>	
-			</div>		
-		</div>	
-	</div>	
-
-	<div class="product-type-wrapper">
-		<div class="product-icon">
-		<?php echo '<img src="' . wp_get_attachment_url( 191 ) . '" alt="" />'; ?> 
-		</div>
-		<div class="product-description">
-			<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-		</div>
-		<div class="product-button-wrapper">
-			<div class="shop-button">
-			<a href="<?php echo get_tag_link(14); ?>">SLEEP STUFF</a>
-			</div>		
-		</div>	
-	</div>	
-	
-	<div class="product-type-wrapper">
-		<div class="product-icon">
-		<?php echo '<img src="' . wp_get_attachment_url( 192 ) . '" alt="" />'; ?> 
-		</div>
-		<div class="product-description">
-			<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-		</div>
-		<div class="product-button-wrapper">
-		<div class="shop-button">
-			<a href="<?php echo get_tag_link(17); ?>">WEAR STUFF</a>
-			</div>		
-		</div>		
-	</div>	
+	<?php
+   		$args = array( 'post_type' => 'post', 'order' => 'ASC' );  // loops posts
+	?>
+	<?php   $terms = get_terms( 'Product-taxonomy', $args ); ?> 
+	<?php foreach ( $terms as $term ) { ?>
+						<div class="product-type-wrapper">
+							<div class="product-icon">
+								<?php echo '<img src="' . get_template_directory_uri() . '/' . 'images/product-type-icons/' . $term->slug . '.svg' . '" alt="" />'; ?>
+							</div>
+							<div class="product-description">
+						  		<p><?php echo $term->description; ?></p>
+						  	</div>
+						  	<div class="product-button-wrapper">
+						  		<div class="shop-button">
+						  			<a href="<?php echo get_term_link($term);?> "><?php echo $term->name ;?> Stuff</a>
+						  		</div>
+							</div>					
+						</div>
+	<?php } ;?>
 </div>
-
-
+							
+                    	
 <h2>Inhabitent Journal</h2>
 <div class="journal-container">
 
