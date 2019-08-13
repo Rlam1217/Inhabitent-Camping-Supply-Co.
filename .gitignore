@@ -35,6 +35,7 @@ ehthumbs.db
 
 plugins/*
 !plugins/red-functionality-master
+!plugins/business-hours-widget
 
 themes/*
 !themes/mastertheme
