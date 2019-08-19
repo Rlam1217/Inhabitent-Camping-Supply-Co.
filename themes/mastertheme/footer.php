@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
@@ -18,9 +17,7 @@
 								<i class="fab fa-facebook-square"></i>
 								<i class="fab fa-twitter-square"></i>
 								<i class="fab fa-google-plus-square"></i>
-							</p>
 						</div>
-					
 					
 						<div class="business-hours">
 							<?php
@@ -30,20 +27,16 @@
 							?>
 						</div>
 					
-					
 						<div class="text-logo">
-						<?php echo '<img src="' . wp_get_attachment_url( 56 ) . '" alt="" />'; ?> 
-						
+							<?php echo '<img src="' . wp_get_attachment_url( 56 ) . '" alt="" />'; ?> 
 						</div>	
 					
 						<div class="site-info">
 							<p>Copyright &copy; 2019 Inhabitent</p>
 						</div>
-						
 					</div>
-					<!-- .site-info -->
-				</footer><!-- #colophon -->
-			</div><!-- #page -->
+			</footer>
+				</div>
 
 			<?php wp_footer(); ?>
 

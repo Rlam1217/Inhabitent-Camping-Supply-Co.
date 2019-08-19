@@ -8,12 +8,11 @@
 ?>
 
 <div class="shop-entry-content">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			
 		</div><!-- .entry-meta -->
-		<?php endif; ?>
+	<?php endif; ?>
 	<!-- .entry-header -->
 
 	<?php echo '<a href="' . get_post_permalink( $id ) . '">'; ?>
@@ -23,8 +22,9 @@
 		<?php the_title( '<h2 class="taxonomy-title">', '</h2>' ); ?>
     	<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 	
-	</div>
+	
 	
 	
 <!-- .entry-content -->
 </article><!-- #post-## -->
+</div>

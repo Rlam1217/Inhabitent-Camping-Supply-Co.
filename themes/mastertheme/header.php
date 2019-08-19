@@ -16,10 +16,9 @@
 	</head>
 
 	<?php if (! is_front_page() && ! is_page('about')) { 
-	$green_header = array( 'green-nav' ); 
-	} else {$green_header = array(); 
-
-	} 
+		$green_header = array( 'green-nav' ); 
+		} else {$green_header = array(); 
+		} 
 	?>
 
 	<body <?php body_class( $green_header); ?>>

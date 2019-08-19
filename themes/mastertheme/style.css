@@ -1432,6 +1432,7 @@ body {
   .product-categories a:hover, .product-categories a:active {
     color: black; }
   .product-categories .taxonomy-title {
+    color: #248A83;
     padding-right: 1rem;
     padding-left: 1rem;
     text-transform: uppercase;

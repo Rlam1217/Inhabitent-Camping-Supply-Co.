@@ -11,7 +11,7 @@ get_header(); ?>
 
 		<?php the_title( '<h1 class="findus-entry-title">', '</h1>' ); ?>
 
-			 <?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php  get_template_part( 'template-parts/content', 'page' ); ?>
 

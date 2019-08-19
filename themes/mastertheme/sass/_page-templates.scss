@@ -719,8 +719,7 @@ img {
    }
     }
 
-    .product-categories{
-       
+    .product-categories {
         width: 1120px;
         text-align: center;
         margin-bottom: 1.5rem;
@@ -729,18 +728,17 @@ img {
         }
         a:visited {
             color:#248A83;
-          }
-
+        }
         a:hover, a:active {
             color: black;
         }
-        .taxonomy-title{
+        .taxonomy-title {
+           color:#248A83;
            padding-right: 1rem;
            padding-left: 1rem;
-            text-transform: uppercase;
-            font-family: '.';
-            font-size: 1.2rem;
-           
+           text-transform: uppercase;
+           font-family: '.';
+           font-size: 1.2rem; 
         }
     }
 
