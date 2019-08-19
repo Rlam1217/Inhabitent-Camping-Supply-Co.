@@ -2,6 +2,12 @@
 
 The Inhabitent site is a multi-page website with a blog for a camping supply company using WordPress as a content management system.
 
+![](themes/mastertheme/images/screenshot_tent1.jpg)
+![](themes/mastertheme/images/screenshot_tent2.jpg)
+![](themes/mastertheme/images/screenshot_tent3.jpg)
+![](themes/mastertheme/images/screenshot_tent4.jpg)
+![](themes/mastertheme/images/screenshot_tent5.jpg)
+
 ## Technologies Used
 
 1. Wordpress 
